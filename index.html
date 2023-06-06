@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>登录界面</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Chat NIUB</h1>
+    <nav>
+      <a href="rzc/jshao.html" target="_parent">关于</a>
+      <a href="rzc/jzen.html" target="_parent">赏杯奶茶🥛</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h2>WELCOME</h2>
+    <form id="login-form" method="post" action="https://www.example.com">
+      <label for="username">用户名</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">密码</label>
+      <input type="password" id="password" name="password" required>
+      <input type="submit" value="登录">
+    </form>
+    <!-- 公告语 -->
+    <div class="notice">
+      <div class="notice-text">
+        公告:网站目前正在内部测试中，暂不开放注册。如果想抢先体验，请联系站长以获取内测账号和密码。站长QQ：2223677155
+      </div>
+    </div>
+  <div id="error-message" class="error"></div> <!-- 错误消息元素 -->
+  </div>
+  <!--JS-->
+  <script src="js/dl.js"></script>
+</body>
+</html>
+
