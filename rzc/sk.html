@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>请我喝奶茶</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("../img/background.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: rgb(255 255 255 / 51%);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      z-index: 999;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: normal;
+      color: #f0fdbb;
+    }
+    .header nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .header a {
+      display: inline-block;
+      margin-left: 20px;
+      font-size: 16px;
+      color: #efefef;
+      text-decoration: none;
+    }
+    .header a:hover {
+      color: #333;
+    }
+    .container {
+      width: 80%;
+      max-width: 800px;
+      margin: 110px auto;
+      padding: 20px;
+      background-color: rgb(255 255 255 / 18%);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    ul {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #b171bd57;
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #3e8e41;
+    }
+    .donate {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+    }
+    .donate-img {
+      max-width: 60%;
+      margin-right: 10%;
+    }
+    .donate-img:last-of-type {
+      margin-right: 0;
+    }
+    .donate h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    .donate p {
+      font-size: 20px;
+      line-height: 1.5;
+      color: #fff;
+    }
+    .donate .divider {
+      height: 70px;
+      width: 1px;
+      background-color: #fff;
+      margin: 0 50px;
+    }
+    .donate .divider--mobile {
+      display: none;
+    }
+    /* 对于小屏幕设备，调整部分样式 */
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      p,
+      ul {
+        font-size: 16px;
+      }
+      .button {
+        font-size: 14px;
+      }
+      .donate {
+        flex-direction: column;
+        align-items: center;
+      }
+      .donate-img {
+        max-width: 80%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      .donate .divider {
+        display: none;
+      }
+      .donate .divider--mobile {
+        display: block;
+        width: 100%;
+        margin: 30px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Chat NIUB</h1>
+    <nav>
+      <a href="v19.html" target="_parent">⏎返回</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h2>支持开发</h2>
+  <p>在闲暇时间里，我出于个人兴趣开发了一个机器人聊天网站。</p>
+    <p>虽然这个网站只是一个小小的个人项目，但是我很喜欢它，因为它让我更好地学习了前端技术，还锻炼了我的编程能力。</p>
+    <div class="donate">
+      <div>
+        <h3>微信支付</h3>
+        <img class="donate-img" src="../img/wechat-qrcode.jpg" alt="微信二维码">
+      </div>
+      <div class="divider"></div>
+      <div>
+        <h3>支付宝支付</h3>
+        <img class="donate-img" src="../img/alipay-qrcode.jpg" alt="支付宝二维码">
+      </div>
+    </div>
+    <p>我提供了微信和支付宝二维码，如果您愿意支持我的网站，欢迎扫描二维码进行捐赠。</p>
+    <p>如果您没有条件进行捐赠，也请您继续支持我们的工作，每一个分享和推荐都是对我们最大的鼓励。</p>
+  </div>
+  <div class="hm-footer">
+    <div class="hm-footer-wrapper">
+      <div class="hm-footer-inner">
+        <div class="hm-footer-logo">
+          <img src="logo-white.png">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
