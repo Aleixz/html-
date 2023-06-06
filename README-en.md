@@ -18,7 +18,7 @@ In my free time, I developed a bot chat website out of personal interest. This w
 This site is a project I developed out of personal interest, so if you think it's a good site, consider donating to it. Your donation will give me more motivation to develop more interesting front-end sites and let more people benefit from it as a reference and inspiration. Donations can be made as follows:
 
 - Paypal QR code:
-! [Alipay QR Code](. /img/alipay-qrcode.jpg)
+! [Alipay QR Code](./img/alipay-qrcode.jpg)
 
 ## Contact
 
