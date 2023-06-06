@@ -1,6 +1,6 @@
 
 [中文](README.md) | [English](README-en.md)
-HTML bot chat site
+# HTML bot chat site
 
 In my free time, I developed a bot chat website out of personal interest. This website is based on front-end technology developed to perform chat functions. If you would like to learn more about this project, you can start with the following:
 
