@@ -98,7 +98,7 @@
       100% { transform: translateX(-100%); }
     }
    /* 自适应 */
-    @media screen and (max-width: 450px)
+    @media screen and (max-width: 480px) {
     .container {
     width: 95%;
     margin: 100px auto;
