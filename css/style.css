@@ -98,9 +98,9 @@
       100% { transform: translateX(-100%); }
     }
    /* 自适应 */
-	@media screen and (max-width: 992px) {
-.container {
-    width: 370px;
+    @media screen and (max-width: 450px)
+    .container {
+    width: 95%;
     margin: 100px auto;
     padding: 20px;
     background-color: rgb(255 255 255 / 18%);
