@@ -9,7 +9,7 @@
 - 快速聊天：可以快速简单地和机器人进行聊天，随时随地与机器人交流。
 ## 技术栈
 
-- 前端：HTML、CSS、JavaScript、jQuery、Bootstrap
+- 前端：HTML、CSS、JavaScript
 
 - 后端：无
 
