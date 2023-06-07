@@ -9,7 +9,7 @@ In my free time, I developed a bot chat website out of personal interest. This w
 - Quick Chat: You can chat with bots quickly and easily, and communicate with them anytime, anywhere.
 ## Technology Stack
 
-- Front-end: HTML, CSS, JavaScript, jQuery, Bootstrap
+- Front-end: HTML, CSS, JavaScript
 
 - Back-end: None
 
