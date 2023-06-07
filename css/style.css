@@ -100,7 +100,7 @@
    /* 自适应 */
 	@media screen and (max-width: 992px) {
 .container {
-    width: 400px;
+    width: 370px;
     margin: 100px auto;
     padding: 20px;
     background-color: rgb(255 255 255 / 18%);
