@@ -97,3 +97,15 @@
       0% { transform: translateX(0); }
       100% { transform: translateX(-100%); }
     }
+   /* 自适应 */
+	@media screen and (max-width: 992px) {
+.container {
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgb(255 255 255 / 18%);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+}
