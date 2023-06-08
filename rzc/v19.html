@@ -33,9 +33,17 @@
         <input type="text" placeholder="请输入问题" onkeypress="handleKeyPress(event)">
         <button onclick="sendMessage()">发送</button>
       </div>
+	<div id="typing-container">
+        <div class="typing-indicator">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="typing-text">AI 正在思考中...</div>
+      </div>
     </main>
 
-	        <!--JS-->
-	        <script src="../js/vk19.js"></script>
+	  <!--JS-->
+	  <script src="../js/vk19.js"></script>
   </body>
 </html>
