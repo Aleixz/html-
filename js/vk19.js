@@ -4,7 +4,20 @@ const inputContainer = document.getElementById("input-container");
 const input = inputContainer.querySelector("input[type='text']");
 const button = inputContainer.querySelector("button");
 const typingContainer = document.getElementById("typing-container");
+// 获取清除对话按钮
+const clearButton = document.getElementById("clear-button");
 
+// 清除对话
+function clearMessages() {
+  const messages = document.querySelectorAll(".message");
+  messages.forEach((message) => {
+    message.remove();
+  });
+  localStorage.removeItem("messages");
+}
+
+// 添加清除对话按钮的事件监听器
+clearButton.addEventListener("click", clearMessages);
 // 加载聊天记录
 function loadMessages() {
   const messages = JSON.parse(localStorage.getItem("messages")) || [];
