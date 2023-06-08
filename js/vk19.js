@@ -5,6 +5,22 @@ const input = inputContainer.querySelector("input[type='text']");
 const button = inputContainer.querySelector("button");
 const typingContainer = document.getElementById("typing-container");
 
+// 加载聊天记录
+function loadMessages() {
+  const messages = JSON.parse(localStorage.getItem("messages")) || [];
+  messages.forEach((message) => {
+    showAnswer(message.name, message.content, message.isMe);
+  });
+}
+
+// 保存聊天记录
+function saveMessage(name, content, isMe) {
+  const message = { name, content, isMe };
+  const messages = JSON.parse(localStorage.getItem("messages")) || [];
+  messages.push(message);
+  localStorage.setItem("messages", JSON.stringify(messages));
+}
+
 // 发送问题
 async function sendMessage() {
   const question = input.value.trim();
@@ -20,11 +36,13 @@ async function sendMessage() {
       if (!answer) {
         answer = createRandomAnswer(question);
       }
-      showAnswer("机器人", answer);
+      showAnswer("机器人", answer, false);
       inputContainer.style.display = "flex";
       button.style.display = "block";
       typingContainer.style.display = "none";
       input.focus(); // 自动选中输入框
+      saveMessage("我", question, true);
+      saveMessage("机器人", answer, false);
     }, 1000);
   }
 }
@@ -50,6 +68,7 @@ function createMessage(name, content, isMe) {
     text.textContent = content;
   } else {
     message.classList.add("xiaoming");
+    text.textContent = content;
   }
 
   return message;
@@ -82,8 +101,8 @@ function createRandomAnswer(question) {
 }
 
 // 显示答案
-function showAnswer(name, answer) {
-  const message = createMessage(name, "", false);
+function showAnswer(name, answer, isMe) {
+  const message = createMessage(name, "", isMe);
   messageContainer.appendChild(message);
   const text = message.querySelector(".text");
   let index = 0;
@@ -149,8 +168,9 @@ window.addEventListener("load", () => {
   messageContainer.scrollTop = messageContainer.scrollHeight;
 });
 
+// 加载聊天记录
+window.addEventListener("load", loadMessages);
+
 // 添加事件监听器
 input.addEventListener("keypress", handleKeyPress);
 button.addEventListener("click", sendMessage);
-document.getElementById("openModalBtn").addEventListener("click", openModal);
-document.getElementById("closeModalBtn").addEventListener("click", closeModal);
