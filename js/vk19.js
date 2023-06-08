@@ -57,7 +57,6 @@ function createMessage(name, content, isMe) {
 
   const avatar = document.createElement("div");
   avatar.classList.add("avatar");
-  avatar.style.backgroundImage = `url(${name.toLowerCase()}.jpg)`;
   message.appendChild(avatar);
 
   const text = document.createElement("div");
