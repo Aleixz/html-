@@ -24,6 +24,7 @@ async function sendMessage() {
       inputContainer.style.display = "flex";
       button.style.display = "block";
       typingContainer.style.display = "none";
+      input.focus(); // 自动选中输入框
     }, 1000);
   }
 }
