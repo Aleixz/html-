@@ -40,7 +40,9 @@ async function sendMessage() {
       inputContainer.style.display = "flex";
       button.style.display = "block";
       typingContainer.style.display = "none";
-      input.focus(); // 自动选中输入框
+      if (window.innerWidth >= 480) {
+        input.focus(); // 自动选中输入框
+      }
       saveMessage("我", question, true);
       saveMessage("机器人", answer, false);
     }, 1000);
@@ -160,7 +162,9 @@ window.onclick = function (event) {
 
 // 页面加载完成后自动聚焦到输入框
 window.addEventListener("load", () => {
-  input.focus();
+  if (window.innerWidth >= 480) {
+    input.focus();
+  }
 });
 
 // 页面加载完成后自动滚动到底部
