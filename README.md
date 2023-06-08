@@ -27,3 +27,12 @@
 - 邮箱：a978781465@Gmail.com
 
 感谢您的支持和关注！
+
+## 截图
+
+登录界面
+(./screenshot/1.jpg)
+介绍页面
+(./screenshot/2.jpg)
+聊天页面
+(./screenshot/3.jpg)
