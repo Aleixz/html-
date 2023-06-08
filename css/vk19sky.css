@@ -189,7 +189,7 @@ nav a {
       {
       color: cyan;
       }
-/* 聊天记录 */
+/* 聊天记录和头像 */
 #message-container {
   height: calc(100vh - 116px); /* 修改为固定高度 */
   overflow-y: scroll; /* 添加滚动条 */
@@ -209,6 +209,8 @@ nav a {
 
 .avatar {
   width: 40px;
+  background-image: url("../img/lgo.jpg");
+  background-size: cover;
   height: 40px;
   background-size: cover;
   border-radius: 50%;
