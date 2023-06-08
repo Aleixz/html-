@@ -31,8 +31,9 @@
 ## 截图
 
 登录界面
-(./screenshot/1.jpg)
+![截图1](./screenshot/1.jpg)
 介绍页面
-(./screenshot/2.jpg)
+![截图2](./screenshot/2.jpg)
 聊天页面
-(./screenshot/3.jpg)
+![截图3](./screenshot/3.jpg)
+![截图4](./screenshot/4.jpg)
