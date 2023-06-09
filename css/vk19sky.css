@@ -194,7 +194,7 @@ nav a {
   height: calc(100vh - 20px);
   overflow-y: scroll; /* 添加滚动条 */
   padding: 20px;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 .message {
@@ -382,7 +382,7 @@ nav a {
     #message-container {
     overflow-y: scroll;
     padding: 20px;
-    padding-top: 100px;
-    height: 780px;
+    padding-top: 70px;
+    height: calc(100vh - 20px);
 }
 }
