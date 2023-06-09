@@ -191,7 +191,7 @@ nav a {
       }
 /* 聊天记录和头像 */
 #message-container {
-  height: calc(100vh - 116px); /* 修改为固定高度 */
+  height: 780px;
   overflow-y: scroll; /* 添加滚动条 */
   padding: 20px;
   padding-top: 60px;
@@ -377,4 +377,12 @@ nav a {
   .btn:hover {
     background-color: #a455dd54; /* 鼠标悬停时背景色变为深蓝色 */
   }
+   /* 自适应 */
+    @media screen and (max-width: 480px) {
+    #message-container {
+    overflow-y: scroll;
+    padding: 20px;
+    padding-top: 100px;
+    height: 780px;
+}
 }
