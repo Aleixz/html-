@@ -191,7 +191,7 @@ nav a {
       }
 /* 聊天记录和头像 */
 #message-container {
-  height: 780px;
+  height: calc(100vh - 20px);
   overflow-y: scroll; /* 添加滚动条 */
   padding: 20px;
   padding-top: 60px;
