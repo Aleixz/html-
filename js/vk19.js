@@ -136,7 +136,6 @@ function showAnswer(name, answer, isMe) {
 // 计算聊天记录容器的高度
 function calculateMessageContainerHeight() {
   const messageContainerHeight = window.innerHeight - inputContainer.offsetHeight;
-  messageContainer.style.height = messageContainerHeight + "px";
 }
 
 // 当窗口大小改变时重新计算聊天记录容器的高度
