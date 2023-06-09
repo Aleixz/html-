@@ -385,4 +385,6 @@ nav a {
     padding-top: 70px;
     height: calc(100vh - 20px);
 }
+#input-container input[type="text"] {
+    width: 80%;
 }
