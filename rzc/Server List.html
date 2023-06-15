@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Server List</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Server List</h1>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Server Name</th>
+					<th>Server IP</th>
+					<th>Players</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody id="server-list-body">
+				<!-- Server rows will be added dynamically by JavaScript -->
+			</tbody>
+		</table>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script>
+	async function updateServerList() {
+		const res = await fetch('https://masterserver.ragecoop.com/all/index.php', {mode: 'no-cors'});
+		if (res.ok) {
+			const data = await res.json();
+			if (data.servers) {
+				// Clear existing server list
+				const serverListBody = document.getElementById('server-list-body');
+				serverListBody.innerHTML = '';
+
+				// Add new server rows
+				data.servers.forEach(server => {
+					// ...
+				});
+			}
+		}
+	}
+
+	// Update server list immediately on page load
+	updateServerList();
+
+	// Update server list every 5 seconds
+	setInterval(updateServerList, 5000);
+	</script>
+</body>
+</html>
